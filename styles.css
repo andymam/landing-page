@@ -1,27 +1,114 @@
 body {
     font-family: roboto;
+    display: flex;
+    flex-direction: column;
+    min-height:  100vh;
+    margin: 0;
 }
 
 .header {
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
-}
-.real-header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-top: 16px;
+    margin-bottom: 75px;
+    max-width: 350px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    align-items: flex-end;
+    margin-bottom: 75px;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
-    padding: 10px;
+    margin-bottom: 75px;
 }
 
 .links {
     display: flex;
+    list-style: none;
     gap: 18px;
-    margin-right: 10px;
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 75px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+
+}
+
+.info-container {
+    display: flex;
+    gap: 40px;
+}
+
+.info {
+    text-align: center;
+}
+
+.rounded-corners {
+    border-radius: 30px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    height: 350px;
+}
+
+.message {
+    max-width: 350px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.card   {
+    background: #3882f6;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 200px;
+    margin-left: 200px;
+    height: 200px;
+    width: 200px;
+}
+
+.call {
+    color: white;
+}
+
+.text {
+    color: white;
 }
 
 a {
@@ -29,6 +116,12 @@ a {
     color: white;
 }
 
-ul {
-    list-style: none;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-top: auto;
 }
